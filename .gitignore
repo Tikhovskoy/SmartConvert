@@ -8,18 +8,29 @@ __pycache__/
 .venv/
 venv/
 
-# PyInstaller
+# Virtual environment (Windows/Linux/macOS)
+ENV/
+env/
+*.env
+
+# PyInstaller build files
 build/
 dist/
-SmartConvert.exe  # ← добавь это, если собираешь exe локально
+SmartConvert.exe
 
-# Inno Setup
+# Inno Setup output
 SmartConvertSetup.exe
+
+# Installer contents
+installer/SmartConvert.exe
+installer/SmartConvertSetup.exe
+installer/tesseract/
+installer/poppler/
 
 # System files
 Thumbs.db
 .DS_Store
 
-# IDE
+# IDE/editor configs
 .vscode/
 .idea/
