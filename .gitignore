@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.env
+.venv/
+venv/
+
+# PyInstaller
+build/
+dist/
+SmartConvert.exe  # ← добавь это, если собираешь exe локально
+
+# Inno Setup
+SmartConvertSetup.exe
+
+# System files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
