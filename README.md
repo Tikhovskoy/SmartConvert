@@ -39,19 +39,24 @@ SmartConvert — автономное настольное приложение 
 
 ```
 
-smartconvert/
-├── app/                      # Исходный код
-│   ├── main.py               # Точка входа
-│   ├── converter.py          # Логика конвертации
-│   └── gui.py                # Интерфейс пользователя
-├── installer/
-│   ├── SmartConvert.exe      # Собранный исполняемый файл
-│   ├── SmartConvertSetup.exe # Установщик
-│   ├── installer.iss         # Скрипт Inno Setup
-│   ├── tesseract/            # Встроенный OCR-движок
-│   ├── poppler/              # Встроенный PDF-интерпретатор
-│   └── icon.ico              # Иконка приложения
-└── README.md
+SmartConvert/
+├── app/                         # Исходный код приложения (GUI, логика)
+│
+├── installer/                   # Установщик SmartConvert
+│   ├── icon.ico                 # Иконка для установщика
+│   ├── installer.iss            # Скрипт Inno Setup
+│   ├── tesseract/               # Встроенный движок OCR
+│   │   ├── doc/
+│   │   └── tessdata/
+│   │       ├── configs/
+│   │       ├── script/
+│   │       └── tessconfigs/
+│   └── poppler/                 # Встроенный движок PDF-рендеринга
+│
+├── requirements.txt             # Зависимости проекта
+├── main.py                      # Точка входа (если используется)
+├── README.md                    # Документация проекта
+└── .gitignore                   # Исключения для Git
 
 ```
 
